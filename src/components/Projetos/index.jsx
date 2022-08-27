@@ -20,7 +20,7 @@ export const Projetos = () => {
 
   useEffect(() => {
     handleClick();
-  });
+  },[postPerClick]);
 
   return (
     <Section>

@@ -51,7 +51,6 @@ const Projeto = ({
             <div className="projeto">
               <div className="image">
                 <img src="./image/git.png" alt="" />
-                <img src="./image/git.png" alt="" />
               </div>
               <div className="conteudo">
                 <div className="desc">
