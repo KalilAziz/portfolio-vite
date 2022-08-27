@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  background: #080808;
+  background: ${({ theme }) => theme.colors.BackgroundColorSecundary};
 
   .container {
-    max-width: 1120px;
-    margin: 0px auto;
     padding: 30px 0;
   }
 
@@ -45,8 +43,23 @@ export const Section = styled.section`
       padding: 20px;
 
       p {
-        margin-bottom: 25px;
+        margin-bottom: 45px;
       }
+      .link {
+          margin-right: 10px;
+          border: 1px solid #000;
+          border-radius: 10px;
+          padding: 20px;
+          color: ${({ theme }) => theme.colors.ColorLaranja};
+          transition: 0.7s;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+          &:hover {
+            border: 1px solid white;
+            color: white;
+            background: ${({ theme }) => theme.colors.Gradient};
+          }
+        }
     }
     @media (max-width: 720px) {
       .perfil {

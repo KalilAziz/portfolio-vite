@@ -1,8 +1,8 @@
-import { ConteudoInicial } from '.';
+import { Sobre } from '.';
 
 export default {
-  title: 'ConteudoInicial',
-  component: ConteudoInicial,
+  title: 'Sobre',
+  component: Sobre,
 };
 
-export const Template = () => <ConteudoInicial />;
+export const Template = () => <Sobre />;

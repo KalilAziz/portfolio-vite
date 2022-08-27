@@ -17,10 +17,10 @@ export const ConteudoInicial = () => {
           </p>
 
           <div className="contato">
-            <Link className="link" to="">
+            <Link className="link" to="/">
               Ver portfolio
             </Link>
-            <Link className="link" to="">
+            <Link className="link" to="/">
               Conhecer o dev
             </Link>
           </div>
