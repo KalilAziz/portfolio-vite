@@ -45,6 +45,16 @@ export const DataProjetos = [
     imagem: 'projeto',
     descricacao:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+    tecnologias: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.Js'],
+    gitHub: 'https://www.youtube.com/watch?v=g9gMANzVNPE',
+    demo: 'https://www.youtube.com/watch?v=g9gMANzVNPE',
+  },
+  {
+    id: 5,
+    nome: 'Exemplo 6',
+    imagem: 'projeto',
+    descricacao:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
     tecnologias: [
       'HTML',
       'CSS',

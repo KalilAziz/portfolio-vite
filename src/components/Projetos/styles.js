@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 export const Section = styled.section`
   background: ${({ theme }) => theme.colors.BackgroundColorSecundary};
-    padding: 50px 0 75px 0;
-
+  padding: 50px 0 75px 0;
+  text-align: center;
     h1{
         text-align: center;
         font-size: 40px;
@@ -14,7 +14,11 @@ export const Section = styled.section`
       flex-wrap: wrap;
     }
 
-    
+    .MaisPost{
+     border: none;
+     font-size: 1.5rem;
+    }
+
 
 
 

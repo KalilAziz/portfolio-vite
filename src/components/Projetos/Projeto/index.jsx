@@ -5,7 +5,15 @@ import { IoClose } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
 
 /* eslint-disable */
-const Projeto = ({ id, nome, imagem, descricao, tecnologias, gitHub, demo }) => {
+const Projeto = ({
+  id,
+  nome,
+  imagem,
+  descricao,
+  tecnologias,
+  gitHub,
+  demo,
+}) => {
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -14,15 +22,14 @@ const Projeto = ({ id, nome, imagem, descricao, tecnologias, gitHub, demo }) => 
   const handleCloseModal = () => {
     setOpenModal(false);
   };
-  console.log(id, nome, imagem, descricao, tecnologias, gitHub, demo);
   return (
     <Div>
-      <img src="./image/imageProjeto.jpeg" alt="" />
+      <img src="./image/git.png" alt="" />
       <div className="conteudo">
         <span>{nome}</span>
-          <Link onClick={handleOpenModal} className="linkButton" to="/">
-            Entrar em contato
-          </Link>
+        <Link onClick={handleOpenModal} className="linkButton" to="/">
+          Ver detalhes!
+        </Link>
       </div>
 
       <Modal
@@ -43,13 +50,13 @@ const Projeto = ({ id, nome, imagem, descricao, tecnologias, gitHub, demo }) => 
           <div className="container">
             <div className="projeto">
               <div className="image">
-                <img src="./image/imageProjeto.jpeg" alt="" />
-                <img src="./image/imageProjeto.jpeg" alt="" />
+                <img src="./image/git.png" alt="" />
+                <img src="./image/git.png" alt="" />
               </div>
               <div className="conteudo">
                 <div className="desc">
                   <h3>Descrição:</h3>
-                  <p>{descricao}</p>
+                  <div>{descricao}</div>
                 </div>
                 <div className="tecnos">
                   <h3>Tecnologias:</h3>
@@ -62,8 +69,12 @@ const Projeto = ({ id, nome, imagem, descricao, tecnologias, gitHub, demo }) => 
               </div>
             </div>
             <div className="divugacacao">
-              <button style={{ marginRight: '10px' }}>Github</button>
-              <button>Demo</button>
+              <Link onClick={handleOpenModal} className="linkButton" to="/">
+                Github
+              </Link>
+              <Link onClick={handleOpenModal} className="linkButton" to="/">
+                Demonstração
+              </Link>
             </div>
           </div>
         </div>
