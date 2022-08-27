@@ -50,43 +50,68 @@ export const Header = styled.header`
       }
     }
 
-    ${({ diretorio }) =>
-      diretorio === '/'
-        ? css`
+    .button{
+      display: flex;
+      align-items: center;
+
+      .linkButton {
+          background: ${({ theme }) => theme.colors.BackgroundColorPrimary};
+          height: 65px;
+          border: 1px solid #000;
+          border-radius: 10px;
+          padding: 20px;
+          color: ${({ theme }) => theme.colors.ColorLaranja};
+          transition: 0.7s;
+          font-size: 1.1rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+          &:hover {
+            border: 1px solid white;
+            color: white;
+            background: ${({ theme }) => theme.colors.Gradient};
+          }
+        }
+    }
+
+    ${({ state }) =>
+      state.inicio &&
+      css`
             .activeInicio{
               color: white;
               border-bottom: 5px solid ${({ theme }) =>
                 theme.colors.ColorLaranja};
             }
-        `
-        : diretorio === '/projetos'
-        ? css`
-              .activeProjetos{
-                color: white;
-                border-bottom: 5px solid ${({ theme }) =>
-                  theme.colors.ColorLaranja};
-              }
+        `}
+
+        ${({ state }) =>
+          state.projeto &&
+          css`
+            .activeProjetos{
+              color: white;
+              border-bottom: 5px solid ${({ theme }) =>
+                theme.colors.ColorLaranja};
             }
-        `
-        : diretorio === '/sobrenos'
-        ? css`
-              .activeSobre{
-                color: white;
-                border-bottom: 5px solid ${({ theme }) =>
-                  theme.colors.ColorLaranja};
-              }
+        `}
+
+        ${({ state }) =>
+          state.sobre &&
+          css`
+            .activeSobre{
+              color: white;
+              border-bottom: 5px solid ${({ theme }) =>
+                theme.colors.ColorLaranja};
             }
-        `
-        : diretorio === '/suporte'
-        ? css`
-              .activeSuporte{
-                color: white;
-                border-bottom: 5px solid ${({ theme }) =>
-                  theme.colors.ColorLaranja};
-              }
+        `}
+
+        ${({ state }) =>
+          state.suporte &&
+          css`
+            .activeSuporte{
+              color: white;
+              border-bottom: 5px solid ${({ theme }) =>
+                theme.colors.ColorLaranja};
             }
-        `
-        : null}
+        `}
 
     .sgvMenu{
       color: white;
@@ -94,7 +119,7 @@ export const Header = styled.header`
     }
 
     @media (max-width: 720px) {
-          nav, button{
+          nav, .button{
             display: none;
           }
           .sgvMenu{
