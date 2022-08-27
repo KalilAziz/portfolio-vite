@@ -15,6 +15,7 @@ export const Section = styled.section`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      padding: 20px;
 
       .buttons{
         display: flex;
@@ -38,14 +39,14 @@ export const Section = styled.section`
           }
 
           ${({ active }) =>
-            active.graduacao &&
+            active.frontEnd &&
             css`
           .buttonGraduacao{
             background: ${({ theme }) => theme.colors.Gradient};
           }`}
 
           ${({ active }) =>
-            active.cursos &&
+            active.backEnd &&
             css`
           .buttonCursos{
             background: ${({ theme }) => theme.colors.Gradient};
@@ -58,15 +59,17 @@ export const Section = styled.section`
             background: ${({ theme }) => theme.colors.Gradient};
           }`}
         }
-      }
 
+
+      }
 
       .conteudo{
         flex: 1;
         min-width: 300px;
         padding: 0px 30px;
+        }
 
-    }
+
     @media (max-width: 600px) {
         .buttons{
             margin: 0 auto;
@@ -77,8 +80,8 @@ export const Section = styled.section`
         .conteudo{
           margin: 30px 0;
         }
-        }
+      }
 
-
+    }
 
 `;
