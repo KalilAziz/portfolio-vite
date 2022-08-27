@@ -45,7 +45,7 @@ export const Header = styled.header`
 
         &:hover {
           color: white;
-          border-bottom: 5px solid rgba(255, 98, 0, 1);
+          border-bottom: 5px solid ${({ theme }) => theme.colors.ColorLaranja};
         }
       }
     }
@@ -55,14 +55,16 @@ export const Header = styled.header`
         ? css`
             .activeInicio{
               color: white;
-              border-bottom: 5px solid rgba(255, 98, 0, 1);
+              border-bottom: 5px solid ${({ theme }) =>
+                theme.colors.ColorLaranja};
             }
         `
         : diretorio === '/projetos'
         ? css`
               .activeProjetos{
                 color: white;
-                border-bottom: 5px solid rgba(255, 98, 0, 1);
+                border-bottom: 5px solid ${({ theme }) =>
+                  theme.colors.ColorLaranja};
               }
             }
         `
@@ -70,7 +72,8 @@ export const Header = styled.header`
         ? css`
               .activeSobre{
                 color: white;
-                border-bottom: 5px solid rgba(255, 98, 0, 1);
+                border-bottom: 5px solid ${({ theme }) =>
+                  theme.colors.ColorLaranja};
               }
             }
         `
@@ -78,7 +81,8 @@ export const Header = styled.header`
         ? css`
               .activeSuporte{
                 color: white;
-                border-bottom: 5px solid rgba(255, 98, 0, 1);
+                border-bottom: 5px solid ${({ theme }) =>
+                  theme.colors.ColorLaranja};
               }
             }
         `

@@ -33,4 +33,13 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
+  .gradientText {
+    background: ${({ theme }) => theme.colors.GradientText};
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: ${({ theme }) => theme.colors.FontColorPrimary};
+}
+
 `;

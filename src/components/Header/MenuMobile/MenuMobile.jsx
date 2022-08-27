@@ -17,16 +17,24 @@ const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) => {
       <nav>
         <ul>
           <li className="activeInicio">
-            <Link to="/">Início</Link>
+            <Link className="link" to="/">
+              Início
+            </Link>
           </li>
           <li className="activeProjetos">
-            <Link to="/projetos">Projetos</Link>
+            <Link className="link" to="/projetos">
+              Projetos
+            </Link>
           </li>
           <li className="activeSobre">
-            <Link to="/sobrenos">Sobre</Link>
+            <Link className="link" to="/sobrenos">
+              Sobre
+            </Link>
           </li>
           <li className="activeSuporte">
-            <Link to="/suporte">Suporte</Link>
+            <Link className="link" to="/suporte">
+              Suporte
+            </Link>
           </li>
         </ul>
       </nav>
