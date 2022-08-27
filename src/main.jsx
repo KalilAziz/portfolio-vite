@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HeaderComponent } from './components/Header';
 import { MyThemeProvider } from './styles/MyThemeProvider';
-import { App } from './templates/App';
+import { Home } from './templates/Home';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <MyThemeProvider>
-      <App />
+      <BrowserRouter>
+        <HeaderComponent />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </MyThemeProvider>
   </React.StrictMode>,
 );
