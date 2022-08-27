@@ -6,7 +6,7 @@ export const FooterComponent = () => {
       <Footer>
         <Container className="container">
           <div className="conteudo">
-            <h1>
+            <h1 className="gradientText">
               Sempre em <br /> busca do próximo passo.
             </h1>
             <p>

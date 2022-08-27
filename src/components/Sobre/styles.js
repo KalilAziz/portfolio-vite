@@ -34,6 +34,14 @@ export const Section = styled.section`
         font-size: 40px;
         display: flex;
         justify-content: space-evenly;
+
+        i{
+          color: ${({ theme }) => theme.colors.ColorLaranja};
+          &:hover{
+            transition: 0.7s;
+            color: white;
+          }
+        }
       }
     }
 

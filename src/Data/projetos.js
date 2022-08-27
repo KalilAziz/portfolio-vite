@@ -1,7 +1,7 @@
 export const DataProjetos = [
   {
     id: 0,
-    nome: 'Exemplo 111111111',
+    nome: 'Exemplo 1',
     imagem: 'projeto',
     descricacao:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',

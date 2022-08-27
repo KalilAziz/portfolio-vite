@@ -5,7 +5,7 @@ export const ConteudoInicial = () => {
   return (
     <Section>
       <Container className="container">
-        <img className="imageTop" src="./image/celular.png" alt="" />
+        <img className="imageTop" src="./image/celular4.png" alt="" />
 
         <div className="conteudo">
           <h1 className="gradientText">
@@ -26,7 +26,7 @@ export const ConteudoInicial = () => {
           </div>
         </div>
 
-        <img className="imageBotton" src="./image/celular.png" alt="" />
+        <img className="imageBotton" src="./image/celular4.png" alt="" />
       </Container>
     </Section>
   );

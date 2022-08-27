@@ -50,33 +50,11 @@ export const Section = styled.section`
       min-width: 350px;
       height: auto;
       object-fit: cover;
-      animation: fadeInFadeOut 3s linear infinite;
     }
-    @keyframes fadeInFadeOut {
-      0% {
-           transform: translateX(0%);
-          }
-      25% {
-           transform: translateY(10%);
-          }
-      50% {
-          transform: translateX(-10%);
-          }
-      100% {
-          transform: translateX(0%);
-          }
-    }
+
     .imageTop {
       display: none;
       width: 50%;
-      animation: fadeInFade 3s linear infinite;
-    }
-    @keyframes fadeInFade {
-           0%{ transform: translateX(0%);}
-           25%{ transform: translateX(10%);}
-           50%{ transform: translateX(0%);}
-           75%{ transform: translateX(-10%);}
-           100%{ transform: translateX(0%);}
     }
 
     @media (max-width: 720px) {

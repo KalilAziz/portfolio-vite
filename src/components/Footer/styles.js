@@ -30,6 +30,11 @@ export const Footer = styled.footer`
 
         i{
           margin-right: 10px;
+          color: ${({ theme }) => theme.colors.ColorLaranja};
+          &:hover{
+            transition: 0.7s;
+            color: white;
+          }
         }
       }
     }

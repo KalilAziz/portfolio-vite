@@ -1,6 +1,6 @@
 import { ConteudoInicial } from '../../components/ConteudoInicial';
 import { HabilidadesETecnologias } from '../../components/HabilidadesETecnologias';
-import { ProjetoIndex } from '../../components/ProjetoIndex';
+import { Projetos } from '../../components/Projetos';
 import { Qualificacoes } from '../../components/Qualificacoes';
 import { Sobre } from '../../components/Sobre';
 import * as Styled from './styles';
@@ -10,9 +10,9 @@ export const Home = () => {
     <Styled.Section>
       <ConteudoInicial />
       <Sobre />
-      <Qualificacoes />
-      <ProjetoIndex />
       <HabilidadesETecnologias />
+      <Qualificacoes />
+      <Projetos />
     </Styled.Section>
   );
 };
